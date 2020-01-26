@@ -68,7 +68,7 @@ void main() {
     ],
   );
 
-  tree = Theme(tree);
+  tree = Theme(child: tree);
 
   var e = tree.build();
 

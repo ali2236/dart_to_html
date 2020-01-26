@@ -1,8 +1,6 @@
 import '../Css.dart';
 
 var alignment_css = Css('''
-  
-
   .center {
     position: absolute;
     top: 50%;
@@ -12,6 +10,8 @@ var alignment_css = Css('''
   
   .alignment-parent {
     position: relative;
+    display: contents;
+    height: auto;
   }
   
   .bottom-right {

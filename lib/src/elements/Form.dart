@@ -17,14 +17,14 @@ class Button extends HtmlElement {
       this.child,
       this.href = '#',
       this.onClick,
-      this.captureClick})
+      this.captureClick,
+      })
       : super(id);
 
   @override
   Element build() {
     var btn = ButtonElement();
     btn.id = id;
-    btn.classes.add('button');
     btn.text = text;
     btn.attributes.addAll({'href': href});
     btn.addEventListener('click', onClick, captureClick);
