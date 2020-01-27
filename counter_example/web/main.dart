@@ -3,6 +3,7 @@ import 'package:dart2html/dart2html.dart';
 void main() {
   querySelector('#output').children.add(
         Theme(
+          frameworks: [MaterialDesign()],
           accentColor: Colors.deepOrangeAccent.toString(),
           child: Scaffold(
             child: Column(
