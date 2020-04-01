@@ -21,11 +21,12 @@ class Container extends HtmlElement {
 }
 
 class Text extends HtmlElement {
+  final String id;
   final String text;
   final TextType textType;
   final TextStyle textStyle;
 
-  Text(this.text,{this.textType = TextType.p, this.textStyle, String id}) : super(id);
+  Text(this.text,{this.textType = TextType.p, this.textStyle, this.id});
 
   @override
   Element build() {

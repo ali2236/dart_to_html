@@ -17,7 +17,7 @@ void main() {
                 ),
                 Align.bottomRight(
                   child: Padding.all(
-                    padding: 2.0,
+                    padding: 1.0,
                     child: Fab(
                         child: MaterialIcon('add'),
                         onClick: (e) {

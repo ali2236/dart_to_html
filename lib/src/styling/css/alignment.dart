@@ -14,6 +14,16 @@ var alignment_css = Css('''
     height: auto;
   }
   
+  .center-right {
+    position: absolute;
+    right: 0%;
+  }
+  
+  .center-left {
+    position: absolute;
+    left: 0%;
+  }
+  
   .bottom-right {
     position: absolute;
     bottom: 0%;

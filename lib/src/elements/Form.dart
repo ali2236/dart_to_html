@@ -19,14 +19,18 @@ class Input extends HtmlElement {
 }
 
 class TextField extends HtmlElement {
+  final String id;
   final String name;
+  final String placeholder;
 
-  TextField({this.name});
+  TextField({this.id, this.name, this.placeholder});
 
   @override
   Element build() {
-    var inTxt = Input(type: 'text').build();
-    inTxt.attributes.addAll({'name': name});
+    var inTxt = Input(type: 'text').build() as InputElement;
+    inTxt.id = id;
+    inTxt.placeholder = placeholder;
+    inTxt.name = name;
     return inTxt;
   }
 }

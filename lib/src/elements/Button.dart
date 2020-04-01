@@ -2,6 +2,7 @@ import 'package:dart2html/dart2html.dart';
 import 'package:dart2html/src/framework/ComponentManager.dart';
 
 class Button extends HtmlElement {
+  final String id;
   final String href;
   final String color;
   final HtmlElement child;
@@ -11,14 +12,13 @@ class Button extends HtmlElement {
 
   Button(
       {this.text,
-        String id,
+        this.id,
         this.child,
         this.href,
         this.onClick,
         this.captureClick,
         this.color,
-      })
-      : super(id);
+      });
 
   @override
   Element build() {

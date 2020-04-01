@@ -33,6 +33,12 @@ class Align extends HtmlElement {
   factory Align.bottomLeft({HtmlElement child}) =>
       Align._('bottom-left', child);
 
+  factory Align.centerRight({HtmlElement child}) =>
+      Align._('center-right', child);
+
+  factory Align.centerLeft({HtmlElement child}) =>
+      Align._('center-left', child);
+
   @override
   Element build() {
     var parent = DivElement();
@@ -79,10 +85,10 @@ class Padding extends HtmlElement {
   @override
   Element build() {
     var div = DivElement();
-    div.style.paddingTop = '${top}em';
-    div.style.paddingBottom = '${bottom}em';
-    div.style.paddingLeft = '${left}em';
-    div.style.paddingRight = '${right}em';
+    div.style.paddingTop = '${top / 8}em';
+    div.style.paddingBottom = '${bottom / 8}em';
+    div.style.paddingLeft = '${left / 8}em';
+    div.style.paddingRight = '${right / 8}em';
     if (child != null) {
       div.children.add(child.build());
     }

@@ -2,7 +2,7 @@ import 'dart:html';
 
 import 'package:dart2html/src/styling/ElementStyle.dart';
 
-enum TextType { p, h1, h2, h3, h4, h5, h6 }
+enum TextType { p, h1, h2, h3, h4, h5, h6, label }
 
 class TextStyle extends ElementStyle{
   final String fontFamily;
